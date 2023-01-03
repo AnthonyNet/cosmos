@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+ 
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
+}
+
+.hero_Headline {
+  font-family: 'Bungee Shade', cursive;
 }
 
 .gradient-01 {
@@ -25,7 +33,11 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(180.86deg, #000 0%, #070f26 53.65%, #3f194d 100%);
+  background: linear-gradient(180deg, #000 0%, #070f26 53.65%, #3f194d 100%);
+}
+
+.about-gradient {
+  background: linear-gradient(0deg, #000 0%, #162552 53.65%, #3f194d 100%);
 }
 
 .gradient-02 {
@@ -35,7 +47,7 @@
   top: 0px;
   right: 0px;
 
-  background: #7aebfb;
+  background: #73c8d3;
   filter: blur(190px);
 }
 

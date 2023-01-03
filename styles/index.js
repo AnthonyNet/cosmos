@@ -12,6 +12,7 @@ const styles = {
     flexStart: 'flex justify-start items-start',
     flexEnd: 'flex justify-end',
     navPadding: 'pt-[98px]',
+    sectionScreen: 'w-screen h-screen',
   
     // hero section
     heroHeading:
