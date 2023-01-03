@@ -33,13 +33,13 @@ const Hero = () => (
         variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] rounded-r-[80px]  z-[0] -top-[30px]" />
           <Image
             src="/hero.bmp"
             alt="cover"
             height={1024} // Desired size with correct aspect ratio
             width={860}
-            className="w-full  h-[500px] object-cover rounded-tl-[140px] z-10 relative"
+            className="w-full  h-[500px] object-cover rounded-tl-[140px] rounded-r-[50px] rounded-bl-lg z-10 relative"
           />
 
        

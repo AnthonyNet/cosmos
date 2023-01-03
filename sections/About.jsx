@@ -36,9 +36,9 @@ const About = () => (
 
       <motion.img
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        src="/arrow-down.svg"
+        src="https://img.icons8.com/color/512/circled-down-2.png"
         alt="arrow down"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
+        className="w-[68px] h-[68px] object-contain  hover:mt-[50px] ease-in duration-300 "
       />
     </motion.div>
   </section>
