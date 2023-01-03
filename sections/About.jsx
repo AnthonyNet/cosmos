@@ -8,16 +8,16 @@ import {fadeIn, staggerContainer} from '../utils/motion';
 
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10 sectionScreen flexCenter about-gradient `}>
+  <section className={`${styles.paddings} relative z-10 about-gradient `}>
     <div className="z-10"/>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col h-[100vh]  `}
+      className={`${styles.innerWidth} ${styles.flexCenter} flex-col h-[100vh]  `}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+      <TypingText title="| About Cosmos Adventure" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
