@@ -44,7 +44,7 @@ const Journeys = () => {
       className={`${styles.paddings} relative z-10 sectionScreen flexCenter about-gradient `}
     >
       <motion.div
-        variants={staggerContainer}
+     
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
