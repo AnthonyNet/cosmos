@@ -6,7 +6,7 @@ import { slideIn } from "./animations/motion";
 
 const style_ = {
   motion:
-    'flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer',
+    'flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[1s] ease-out-flex cursor-pointer',
  img: 'absolute w-full h-full object-cover rounded-[24px]',
  h3: 'font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]',
  div: 'absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]',
@@ -19,7 +19,7 @@ const JourneyCard = ({ id, imgUrl, title, index, active, handleClick }) => {
     <motion.div
       variants={slideIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
-        active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
+        active === id ? "lg:flex-[1] flex-[10]" : "lg:flex-[0.3] flex-[2]"
       } ${style_.motion}`}
       onClick={() => handleClick(id)}
     >
