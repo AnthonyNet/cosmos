@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { staggerContainer } from "../components/animations/motion";
 import { JourneyCard, TitleText, TypingText } from "../components";
 
 
@@ -12,27 +11,27 @@ const journeys = [
   {
     id: "journey-1",
     imgUrl: "/planets.bmp",
-    title: "Moon",
+    title: "The Solar System",
   },
   {
     id: "journey-2",
     imgUrl: "/planets2.bmp",
-    title: "The Solar System",
+    title: "The Mars",
   },
   {
     id: "journey-3",
     imgUrl: "/planets3.bmp",
-    title: "The Solar System & below",
+    title: "Outer Space",
   },
   {
     id: "journey-4",
-    imgUrl: "/planets4.bmp",
-    title: "The Loner´s Planet",
+    imgUrl: "/planets4.webp",
+    title: "Alien Encounter",
   },
   {
     id: "journey-5",
     imgUrl: "/hero.bmp",
-    title: "First trip",
+    title: "The Moon",
   },
 ];
 
@@ -44,18 +43,18 @@ const Journeys = () => {
       className={`${styles.paddings} relative z-10 sectionScreen flexCenter about-gradient `}
     >
       <motion.div
-     
+      
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| The World" textStyles="text-center" />
+        <TypingText title="| The Journey starts here" textStyles="text-center text-3xl" />
 
         <TitleText
           title={
             <>
-              Choose the world you want
+              Choose the journey you want
               <br className="md:block hidden" /> to explore
             </>
           }

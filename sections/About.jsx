@@ -4,14 +4,14 @@ import {motion} from 'framer-motion';
 import {TypingText} from '../components';
 
 import styles from '../styles';
-import {fadeIn, staggerContainer} from '../components/animations/motion';
+import {slideIn} from '../components/animations/motion';
 
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10 about-gradient grid items-center justify-center `}>
     <div className="z-10 "/>
     <motion.div
-      variants={staggerContainer}
+     
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
@@ -20,7 +20,7 @@ const About = () => (
       <TypingText title="| About Cosmos Adventure" textStyles="text-center" />
 
       <motion.p
-        variants={fadeIn('up', 'tween', 0.2, 1)}
+        variants={slideIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
         <span className="font-extrabold text-white">Cosmos</span> is a new
@@ -35,7 +35,7 @@ const About = () => (
       </motion.p>
 
       <motion.img
-        variants={fadeIn('up', 'tween', 0.3, 1)}
+        variants={slideIn('up', 'tween', 0.3, 1)}
         src="https://img.icons8.com/color/512/circled-down-2.png"
         alt="arrow down"
         className="w-[68px] h-[68px] object-contain  hover:mt-[50px] ease-in duration-300 "

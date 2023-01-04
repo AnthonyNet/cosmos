@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Image from 'next/image';
 
 import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../components/animations/motion";
+import { slideIn, textVariant } from "../components/animations/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} h-screen w-screen sm:pl-16 pl-6 hero-gradient `}>
     <motion.div
-      variants={staggerContainer}
+    
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amout: 0.25 }}
@@ -23,9 +23,9 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
         >
-            <h1 className={styles.heroHeading}>A</h1>
-          <div className={styles.heroDText}>D</div> 
-          <h1 className={styles.heroHeading}>Venture</h1>
+            <h1 className={styles.heroHeading +'hero_Headline mb-4'}>Adventure</h1>
+        
+        
         </motion.div>
       </div>
 
