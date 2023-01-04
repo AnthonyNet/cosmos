@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 
-import { textContainer, textVariant2 } from "../utils/motion";
+import { textContainer, textVariant2 } from "./animations/motion";
 
 export const TypingText = ({ title, textStyles }) => (
   <motion.p

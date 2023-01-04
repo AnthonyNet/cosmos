@@ -4,18 +4,18 @@ import {motion} from 'framer-motion';
 import {TypingText} from '../components';
 
 import styles from '../styles';
-import {fadeIn, staggerContainer} from '../utils/motion';
+import {fadeIn, staggerContainer} from '../components/animations/motion';
 
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10 about-gradient `}>
-    <div className="z-10"/>
+  <section className={`${styles.paddings} relative z-10 about-gradient grid items-center justify-center `}>
+    <div className="z-10 "/>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} ${styles.flexCenter} flex-col h-[100vh]  `}
+      className={`${styles.innerWidth} ${styles.flexCenter} flex-col h-[100vh]`}
     >
       <TypingText title="| About Cosmos Adventure" textStyles="text-center" />
 

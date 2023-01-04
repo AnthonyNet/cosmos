@@ -4,10 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { staggerContainer } from "../utils/motion";
-import { JourneyCard,TitleText, TypingText } from "../components";
-
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
+import { staggerContainer } from "../components/animations/motion";
+import { JourneyCard, TitleText, TypingText } from "../components";
 
 
 const journeys = [
@@ -70,6 +68,7 @@ const Journeys = () => {
               key={journey.id}
               index={index}
               {...journey}
+               active={active}
               handleClick={setActive}
             />
            

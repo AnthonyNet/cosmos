@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from 'next/image';
 
 import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import { slideIn, staggerContainer, textVariant } from "../components/animations/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} h-screen w-screen sm:pl-16 pl-6 hero-gradient `}>
