@@ -40,7 +40,7 @@ const Journeys = () => {
   const [active, setActive] = useState("journey-2");
   return (
     <section
-      className={`${styles.paddings} relative z-10 sectionScreen flexCenter about-gradient `}
+      className={`${styles.paddings} relative z-10 sectionScreen flexCenter hero-gradient `}
     >
       <motion.div
       

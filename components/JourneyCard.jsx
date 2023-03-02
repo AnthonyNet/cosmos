@@ -35,7 +35,7 @@ const JourneyCard = ({ id, imgUrl, title, index, active, handleClick }) => {
       ) : (
         <div className={style_.div}>
           <p className={style_.p}>
-            Enter Metaverse
+            Enter Journey
           </p>
           <h2 className={style_.h2}>
             {title}

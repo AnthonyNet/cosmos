@@ -14,7 +14,6 @@ const styles = {
     navPadding: 'pt-[98px]',
     sectionScreen: 'w-screen h-screen',
   
-    
 }
     
   

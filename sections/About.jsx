@@ -8,7 +8,8 @@ import {slideIn} from '../components/animations/motion';
 
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10 about-gradient grid items-center justify-center `}>
+  <section className={`${styles.paddings} relative z-10 about-gradient grid items-center justify-center `}>  
+
     <div className="z-10 "/>
     <motion.div
      
@@ -23,6 +24,7 @@ const About = () => (
         variants={slideIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
+      
         <span className="font-extrabold text-white">Cosmos</span> is a new
         travelling of the future, where you can enjoy the traveling to the worlds and galaxies.
         The sci-fi becomes real and you can enjoy what was only a {' '}
